@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Monterrey | Wedding Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'wedding-cream': '#FFF8F0',
+                        'wedding-gold': '#D4AF37',
+                        'wedding-rose': '#E8C4B8',
+                        'wedding-sage': '#9CAF9E',
+                        'wedding-navy': '#2C3E50',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-wedding-cream text-wedding-navy">
+    
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-wedding-cream via-rose-50 to-wedding-cream overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 left-10 text-6xl text-wedding-gold">✦</div>
+            <div class="absolute bottom-20 right-20 text-6xl text-wedding-gold">✦</div>
+            <div class="absolute top-1/3 right-10 text-4xl text-wedding-rose">❋</div>
+            <div class="absolute bottom-1/3 left-20 text-4xl text-wedding-rose">❋</div>
+        </div>
+        
+        <div class="text-center z-10 px-4 py-20">
+            <p class="font-serif text-2xl md:text-3xl text-wedding-gold tracking-widest mb-4">WELCOME TO</p>
+            <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-wedding-navy mb-4">Monterrey</h1>
+            <p class="font-serif text-3xl md:text-4xl text-wedding-gold italic mb-8">Your Wedding Adventure Guide</p>
+            <div class="mt-12 h-px w-32 mx-auto bg-wedding-gold opacity-50"></div>
+            <p class="mt-8 text-lg md:text-xl tracking-wide text-wedding-navy opacity-80 mb-8">Discover the beauty and flavors of our city</p>
+            <a href="#guide" class="inline-block px-8 py-3 bg-wedding-gold text-white rounded-full hover:bg-wedding-navy transition-all duration-300 tracking-wider font-medium">
+                EXPLORE
+            </a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white bg-opacity-95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-base">
+                <a href="#restaurants" class="text-wedding-navy hover:text-wedding-gold transition-colors font-medium">Restaurants</a>
+                <a href="#culture" class="text-wedding-navy hover:text-wedding-gold transition-colors font-medium">Culture</a>
+                <a href="#hiking" class="text-wedding-navy hover:text-wedding-gold transition-colors font-medium">Hiking</a>
+                <a href="#nightlife" class="text-wedding-navy hover:text-wedding-gold transition-colors font-medium">Nightlife</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="guide" class="max-w-7xl mx-auto px-4 py-16">
+        
+        <!-- Intro Section -->
+        <section class="text-center mb-20">
+            <h2 class="font-serif text-5xl md:text-6xl text-wedding-navy mb-6">Our Favorite Places</h2>
+            <div class="w-24 h-1 bg-wedding-gold mx-auto mb-6"></div>
+            <p class="text-xl text-wedding-navy opacity-70 max-w-3xl mx-auto leading-relaxed">
+                We've curated this guide to help you experience the best of Monterrey during your visit. From authentic tacos to stunning mountain views, these are our personal recommendations for an unforgettable stay.
+            </p>
+        </section>
+
+        <!-- Restaurants Section -->
+        <section id="restaurants" class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-5xl md:text-6xl text-wedding-navy mb-4">Dining</h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="text-2xl text-wedding-gold">✦</div>
+                </div>
+                <p class="text-lg text-wedding-navy opacity-70 italic">Savor the flavors of Monterrey</p>
+            </div>
+
+            <!-- Tacos -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">🌮</span> Tacos
+                </h3>
+                
+                <div class="mb-8">
+                    <h4 class="font-semibold text-xl text-wedding-navy mb-4">Carne Asada, Gringas & Piratas</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <a href="https://maps.app.goo.gl/nAvmbtCH4RABbskE8" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">El Buey San Pedro</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/davPa3A8tAv6NiQm9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">El Buey Fundidora</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/Jx74q3YCurosfmNP7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Tacos y Tacos Popo's</p>
+                            <p class="text-sm text-wedding-navy opacity-60 mt-1">Our favorite!</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/zUoGKpp5NB6ZuCYP7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Tacos el Güero</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-xl text-wedding-navy mb-4">Morning Tacos (Harina y Maíz)</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <a href="https://maps.app.goo.gl/Jx74q3YCurosfmNP7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Tacos Popo's</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/GQo1Yju7RGXfGpmS7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Tacos Leal Centro</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/BvgHZy1Rbvjoz7qs9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Tacos Leal Zona Tec</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regional Cuisine -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-rose">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">🍖</span> Regional Specialties
+                </h3>
+                <p class="text-wedding-navy opacity-70 mb-6 italic">Traditional Monterrey cuisine including Machacado con Huevo and Cabrito</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://maps.app.goo.gl/RdQFxGcyuhV68VPL7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Manolín</p>
+                        <p class="text-sm text-wedding-navy opacity-60 mt-1">Machacado con Huevo</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/LbFMkii16VUw3aYm8" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Casa Padre Mier</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/YG553CzEscnp7rt17" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">El Rey del Cabrito Centro</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/gDv6Hj5bYfrnBp8J9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Las Diligencias</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mexican Cuisine -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-sage">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">🌶️</span> Traditional Mexican
+                </h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://maps.app.goo.gl/hkpz3wbP8o6MVpUb6" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Zapote Negro</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/nKrbnmNmw3tNuAGq5" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Lúcido</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/af5v4HMGsHCnFq1N9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Madre Oaxaca</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/c8m7s12CuwTRWz5N7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Jabalina</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/77uZg6vj1M88SsDcA" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">El Lindero</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chilaquiles -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">🍳</span> Chilaquiles
+                </h3>
+                <p class="text-wedding-navy opacity-70 mb-6 italic">Our favorite breakfast!</p>
+                
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="https://maps.app.goo.gl/GhrUT2GwtCBkdpEr5" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Cuarto Creciente</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/EVxLeH1DqKhcvof89" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Las Catrinas</p>
+                        <p class="text-sm text-wedding-navy opacity-60 mt-1">Our favorite!</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/4CbpVRvkh1WkeLi56" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Frida Chilaquiles</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bars & Drinks -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-navy">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">🍸</span> Bars & Drinks
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-8">
+                    <a href="https://maps.app.goo.gl/myYmc6Vo5c5SvhuS8" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Bar 1900</p>
+                        <p class="text-sm text-wedding-navy opacity-60 mt-1">Restored bar at Gran Hotel Ancira</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/RzCb1QGncYR5zymA9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Sky Bar Monterrey</p>
+                        <p class="text-sm text-wedding-navy opacity-60 mt-1">Rooftop bar with city views</p>
+                    </a>
+                </div>
+
+                <h4 class="font-semibold text-xl text-wedding-navy mb-4">Restaurant-Bars</h4>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://maps.app.goo.gl/eSkcaxhuWcCiVWyS8" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Sierra Madre Brewing Co.</p>
+                        <p class="text-sm text-wedding-navy opacity-60 mt-1">Local brewery</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/jrJohkw1z2UW6Lju6" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Café Belmonte Bar</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/wfrbazyHT9JVKk9LA" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Tierra Libre</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/BZqZ8YcZxL55gGjA9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                        <p class="font-medium text-wedding-navy">Botanero Moritas</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Street Food & Desserts -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-rose">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">🍦</span> Street Food & Desserts
+                </h3>
+                
+                <div class="mb-8">
+                    <h4 class="font-semibold text-xl text-wedding-navy mb-4">Elotes</h4>
+                    <a href="https://maps.app.goo.gl/WWimy2CDFtn5muP39" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md max-w-md">
+                        <p class="font-medium text-wedding-navy">Elotes La Purísima</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-xl text-wedding-navy mb-4">Cafés & Bakeries</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="https://maps.app.goo.gl/J5coxfeXcybG4nhHA" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">El Cafelito Monterrey</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/8ppDoNxDcZxuvNKM9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">BreAd Arboleda</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/vzTRFNbRfQNufVg27" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Breadbox</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/y9fv4iD3qey4x4Sf8" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Pan de Pan</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/x8GtL425M2zbnHqz9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
+                            <p class="font-medium text-wedding-navy">Panadería La Mundial</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section id="culture" class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-5xl md:text-6xl text-wedding-navy mb-4">Culture & History</h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="text-2xl text-wedding-gold">✦</div>
+                </div>
+                <p class="text-lg text-wedding-navy opacity-70 italic">Discover Monterrey's rich heritage</p>
+            </div>
+
+            <!-- Museums & Historic Sites -->
+            <div class="space-y-8">
+                <!-- Obispado -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-gold">
+                    <h3 class="font-serif text-2xl md:text-3xl text-wedding-navy mb-4">🏛️ El Obispado</h3>
+                    <p class="text-wedding-navy opacity-70 mb-4">Historic museum with stunning city views</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://maps.app.goo.gl/RwsvwrGPWbvPHfYQ7" target="_blank" class="inline-block px-6 py-2 bg-wedding-gold text-white rounded-full hover:bg-wedding-navy transition-colors">
+                            Museo Regional
+                        </a>
+                        <a href="https://maps.app.goo.gl/Truz1Bv9Q8qHeMPF6" target="_blank" class="inline-block px-6 py-2 bg-wedding-sage text-white rounded-full hover:bg-wedding-navy transition-colors">
+                            Mirador (Viewpoint)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MARCO -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-rose">
+                    <h3 class="font-serif text-2xl md:text-3xl text-wedding-navy mb-4">🎨 Museo MARCO</h3>
+                    <p class="text-wedding-navy opacity-70 mb-4">Contemporary Art Museum - Free on Wednesdays & Sundays</p>
+                    <a href="https://maps.app.goo.gl/DoZfTghBgxctciQK9" target="_blank" class="inline-block px-6 py-2 bg-wedding-rose text-white rounded-full hover:bg-wedding-navy transition-colors">
+                        Visit MARCO
+                    </a>
+                </div>
+
+                <!-- Macroplaza Area -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-sage">
+                    <h3 class="font-serif text-2xl md:text-3xl text-wedding-navy mb-4">🌳 Macroplaza & Surroundings</h3>
+                    <p class="text-wedding-navy opacity-70 mb-6">The heart of Monterrey - perfect for walking and exploring</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <a href="https://maps.app.goo.gl/eif2rN5RK8D5H8Gj7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Macroplaza</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/CraAQ6Npt252h8Xu9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Barrio Antiguo</p>
+                            <p class="text-sm text-wedding-navy opacity-60 mt-1">Sunday market</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/RxsbJpnLX1KGqdik8" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Paseo Santa Lucía</p>
+                            <p class="text-sm text-wedding-navy opacity-60 mt-1">Walk or take the boat</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Parque Fundidora -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-navy">
+                    <h3 class="font-serif text-2xl md:text-3xl text-wedding-navy mb-4">🏭 Parque Fundidora</h3>
+                    <p class="text-wedding-navy opacity-70 mb-6">Former steel foundry turned urban park - museums, art, bike rentals, picnics</p>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="https://maps.app.goo.gl/UfarJwgTuGzPEXeC7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Museo Horno 3</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/7Lc3PMkfPVv8UqWN6" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Centro de las Artes</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/1wqaUApSzYGMyxzW9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Cineteca y Fototeca</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/j2vnqDGNxkDtiGmEA" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Bike Rentals</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- History Museums -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-gold">
+                    <h3 class="font-serif text-2xl md:text-3xl text-wedding-navy mb-4">📚 History Museums</h3>
+                    <p class="text-wedding-navy opacity-70 mb-6">Some museums are free on Tuesdays and Sundays</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <a href="https://maps.app.goo.gl/eE5b3YqEmhQcyGur7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Museo de Historia</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/NGNTC8gcgNeaturS9" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Museo del Noreste</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/gkyuibJXoRf3zDz39" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Museo del Palacio de Gobierno</p>
+                            <p class="text-sm text-wedding-navy opacity-60 mt-1">Free Tuesdays & Sundays</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/hjA3T4JzG6XvKzVq6" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">La Casa del Campesino</p>
+                            <p class="text-sm text-wedding-navy opacity-60 mt-1">Popular cultures museum</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/kuRmRjLdWYm4PJyJA" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                            <p class="font-medium text-wedding-navy">Colegio Civil (Pinacoteca)</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- San Pedro & More -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-rose">
+                    <h3 class="font-serif text-2xl md:text-3xl text-wedding-navy mb-4">🌸 San Pedro & Parks</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-xl text-wedding-navy mb-3">Centro de San Pedro</h4>
+                            <p class="text-wedding-navy opacity-70 mb-4">Walk down Calle Independencia, visit cafés and plazas</p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <a href="https://maps.app.goo.gl/Jx8AVpLTaCF9pYbi7" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                                    <p class="font-medium text-wedding-navy">La Caja de Agua</p>
+                                </a>
+                                <a href="https://maps.app.goo.gl/CG7swGHwCLn61UKKA" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                                    <p class="font-medium text-wedding-navy">Museo Arqueológico</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xl text-wedding-navy mb-3">Green Spaces</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <a href="https://maps.app.goo.gl/uCH5e8MQJtDCGc8u6" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                                    <p class="font-medium text-wedding-navy">Parque Rufino Tamayo</p>
+                                </a>
+                                <a href="https://maps.app.goo.gl/Hh79AkStqQFQ6tdh8" target="_blank" class="block p-4 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all">
+                                    <p class="font-medium text-wedding-navy">Museo La Milarca</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hiking Section -->
+        <section id="hiking" class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-5xl md:text-6xl text-wedding-navy mb-4">Nature & Hiking</h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="text-2xl text-wedding-gold">✦</div>
+                </div>
+                <p class="text-lg text-wedding-navy opacity-70 italic">Experience the stunning Sierra Madre mountains</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-wedding-sage to-wedding-gold"></div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl text-wedding-navy mb-3">Parque Chipinque</h3>
+                        <p class="text-wedding-navy opacity-70 mb-4">Ecological park with trails and breathtaking views</p>
+                        <a href="https://maps.app.goo.gl/mPjkRrPHNWCtqZ968" target="_blank" class="inline-block px-6 py-2 bg-wedding-gold text-white rounded-full hover:bg-wedding-navy transition-colors">
+                            View Location
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-wedding-rose to-wedding-sage"></div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl text-wedding-navy mb-3">La Huasteca</h3>
+                        <p class="text-wedding-navy opacity-70 mb-4">Canyon park perfect for hiking or mountain biking</p>
+                        <a href="https://maps.app.goo.gl/LtCUydKfj8EZnKgdA" target="_blank" class="inline-block px-6 py-2 bg-wedding-gold text-white rounded-full hover:bg-wedding-navy transition-colors">
+                            View Location
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-wedding-navy to-wedding-rose"></div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl text-wedding-navy mb-3">La Estanzuela</h3>
+                        <p class="text-wedding-navy opacity-70 mb-4">Natural park with diverse trails and wildlife</p>
+                        <a href="https://maps.app.goo.gl/UZynZf7Vkq7FPncN6" target="_blank" class="inline-block px-6 py-2 bg-wedding-gold text-white rounded-full hover:bg-wedding-navy transition-colors">
+                            View Location
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nightlife Section -->
+        <section id="nightlife" class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-5xl md:text-6xl text-wedding-navy mb-4">Nightlife</h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="text-2xl text-wedding-gold">✦</div>
+                </div>
+                <p class="text-lg text-wedding-navy opacity-70 italic">Experience Monterrey after dark</p>
+            </div>
+
+            <!-- High-end Areas -->
+            <div class="mb-12 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-navy">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">✨</span> Upscale Dining & Entertainment Areas
+                </h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://maps.app.goo.gl/8N3o73jV2KK2Yb168" target="_blank" class="block p-6 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all hover:shadow-md">
+                        <p class="font-medium text-wedding-navy text-lg">Fashion Drive</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/Dr3Sj2pJuFhcShoVA" target="_blank" class="block p-6 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all hover:shadow-md">
+                        <p class="font-medium text-wedding-navy text-lg">Arboleda</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/UJMzhPnaWXAeBqu99" target="_blank" class="block p-6 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all hover:shadow-md">
+                        <p class="font-medium text-wedding-navy text-lg">Trébol Park</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/H9M99SFfFvNxrEAn6" target="_blank" class="block p-6 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all hover:shadow-md">
+                        <p class="font-medium text-wedding-navy text-lg">Metropolitan Center</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/cicHwRn6j8j9yEP66" target="_blank" class="block p-6 bg-wedding-cream rounded-lg hover:bg-wedding-rose hover:bg-opacity-20 transition-all hover:shadow-md">
+                        <p class="font-medium text-wedding-navy text-lg">Punto Valle</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bar Hopping Areas -->
+            <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-6 flex items-center">
+                    <span class="text-wedding-gold mr-3">🎉</span> Bar Hopping Neighborhoods
+                </h3>
+                
+                <div class="space-y-6">
+                    <div class="p-6 bg-wedding-cream rounded-lg">
+                        <h4 class="font-semibold text-2xl text-wedding-navy mb-3">Barrio Antiguo</h4>
+                        <p class="text-wedding-navy opacity-70 italic">Historic neighborhood with vibrant nightlife. Preferably go with a local or someone who speaks Spanish.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-wedding-cream rounded-lg">
+                        <h4 class="font-semibold text-2xl text-wedding-navy mb-3">Centrito Valle</h4>
+                        <p class="text-wedding-navy opacity-70 italic">Trendy area along Calle Río Orinoco with multiple bars and restaurants</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-wedding-cream via-rose-50 to-wedding-cream py-16 mt-24">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <div class="text-6xl text-wedding-gold mb-4">✦</div>
+                <h3 class="font-serif text-3xl md:text-4xl text-wedding-navy mb-4">Enjoy Your Stay</h3>
+                <p class="text-lg text-wedding-navy opacity-70 max-w-2xl mx-auto">
+                    We hope this guide helps you discover and fall in love with Monterrey just as we have. Safe travels!
+                </p>
+            </div>
+            <div class="h-px w-32 mx-auto bg-wedding-gold opacity-50 mb-8"></div>
+            <p class="text-wedding-navy opacity-60 text-sm">Created with love for our wedding guests</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

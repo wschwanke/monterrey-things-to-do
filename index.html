@@ -8,31 +8,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'serif': ['Cormorant Garamond', 'serif'],
-                        'sans': ['Montserrat', 'sans-serif'],
-                    },
-                    colors: {
-                        'wedding-bg': '#F6F5F1',
-                        'wedding-light-pink': '#F1D4C6',
-                        'wedding-pink': '#D0A595',
-                        'wedding-dark-pink': '#AF654C',
-                        'wedding-gold': '#B5853B',
-                        'wedding-sage': '#5B6B61',
-                        'wedding-primary': '#171D29',
-                    }
-                }
-            }
-        }
-    </script>
     <style>
+        :root {
+            --wedding-bg: #F6F5F1;
+            --wedding-light-pink: #F1D4C6;
+            --wedding-pink: #D0A595;
+            --wedding-dark-pink: #AF654C;
+            --wedding-gold: #B5853B;
+            --wedding-sage: #5B6B61;
+            --wedding-primary: #171D29;
+        }
+        
         body {
             font-family: 'Montserrat', sans-serif;
+            background-color: var(--wedding-bg);
+            color: var(--wedding-primary);
         }
+        
+        .bg-wedding-bg { background-color: var(--wedding-bg); }
+        .bg-wedding-light-pink { background-color: var(--wedding-light-pink); }
+        .bg-wedding-pink { background-color: var(--wedding-pink); }
+        .bg-wedding-dark-pink { background-color: var(--wedding-dark-pink); }
+        .bg-wedding-gold { background-color: var(--wedding-gold); }
+        .bg-wedding-sage { background-color: var(--wedding-sage); }
+        .bg-wedding-primary { background-color: var(--wedding-primary); }
+        
+        .text-wedding-bg { color: var(--wedding-bg); }
+        .text-wedding-light-pink { color: var(--wedding-light-pink); }
+        .text-wedding-pink { color: var(--wedding-pink); }
+        .text-wedding-dark-pink { color: var(--wedding-dark-pink); }
+        .text-wedding-gold { color: var(--wedding-gold); }
+        .text-wedding-sage { color: var(--wedding-sage); }
+        .text-wedding-primary { color: var(--wedding-primary); }
+        
+        .border-wedding-gold { border-color: var(--wedding-gold); }
+        .border-wedding-pink { border-color: var(--wedding-pink); }
+        .border-wedding-sage { border-color: var(--wedding-sage); }
+        .border-wedding-primary { border-color: var(--wedding-primary); }
+        
+        .border-b-2 { border-bottom-width: 2px; }
+        
+        .hover\:bg-wedding-primary:hover { background-color: var(--wedding-primary); }
+        .hover\:bg-wedding-pink:hover { background-color: var(--wedding-pink); }
+        .hover\:text-wedding-gold:hover { color: var(--wedding-gold); }
+        
+        .from-wedding-bg { --tw-gradient-from: var(--wedding-bg); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 245, 241, 0)); }
+        .from-wedding-light-pink { --tw-gradient-from: var(--wedding-light-pink); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(241, 212, 198, 0)); }
+        .from-wedding-pink { --tw-gradient-from: var(--wedding-pink); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(208, 165, 149, 0)); }
+        .from-wedding-sage { --tw-gradient-from: var(--wedding-sage); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(91, 107, 97, 0)); }
+        .from-wedding-primary { --tw-gradient-from: var(--wedding-primary); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(23, 29, 41, 0)); }
+        
+        .via-wedding-light-pink { --tw-gradient-stops: var(--tw-gradient-from), var(--wedding-light-pink), var(--tw-gradient-to, rgba(241, 212, 198, 0)); }
+        
+        .to-wedding-bg { --tw-gradient-to: var(--wedding-bg); }
+        .to-wedding-gold { --tw-gradient-to: var(--wedding-gold); }
+        .to-wedding-sage { --tw-gradient-to: var(--wedding-sage); }
+        .to-wedding-dark-pink { --tw-gradient-to: var(--wedding-dark-pink); }
     </style>
 </head>
 <body class="bg-wedding-bg text-wedding-primary">
@@ -98,7 +129,7 @@
                 </h3>
                 
                 <div class="mb-8">
-                    <h4 class="font-semibold text-xl text-wedding-primary mb-4">Carne Asada, Gringas & Piratas</h4>
+                    <h4 class="font-semibold text-xl text-wedding-primary mb-4 pb-2 border-b-2 border-wedding-primary inline-block">Carne Asada, Gringas & Piratas</h4>
                     <div class="grid md:grid-cols-2 gap-4">
                         <a href="https://maps.app.goo.gl/nAvmbtCH4RABbskE8" target="_blank" class="block p-4 bg-wedding-light-pink rounded-lg hover:bg-wedding-pink hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
                             <p class="font-medium text-wedding-primary">El Buey San Pedro</p>
@@ -117,7 +148,7 @@
                 </div>
 
                 <div>
-                    <h4 class="font-semibold text-xl text-wedding-primary mb-4">Morning Tacos (Harina y Maíz)</h4>
+                    <h4 class="font-semibold text-xl text-wedding-primary mb-4 pb-2 border-b-2 border-wedding-primary inline-block">Morning Tacos (Harina y Maíz)</h4>
                     <div class="grid md:grid-cols-2 gap-4">
                         <a href="https://maps.app.goo.gl/Jx74q3YCurosfmNP7" target="_blank" class="block p-4 bg-wedding-light-pink rounded-lg hover:bg-wedding-pink hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
                             <p class="font-medium text-wedding-primary">Tacos Popo's</p>
@@ -133,7 +164,7 @@
             </div>
 
             <!-- Regional Cuisine -->
-            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-pink">
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
                 <h3 class="font-serif text-3xl md:text-4xl text-wedding-primary mb-6 flex items-center">
                     <span class="text-wedding-gold mr-3">🍖</span> Regional Specialties
                 </h3>
@@ -157,7 +188,7 @@
             </div>
 
             <!-- Mexican Cuisine -->
-            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-sage">
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
                 <h3 class="font-serif text-3xl md:text-4xl text-wedding-primary mb-6 flex items-center">
                     <span class="text-wedding-gold mr-3">🌶️</span> Traditional Mexican
                 </h3>
@@ -203,7 +234,7 @@
             </div>
 
             <!-- Bars & Drinks -->
-            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-primary">
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
                 <h3 class="font-serif text-3xl md:text-4xl text-wedding-primary mb-6 flex items-center">
                     <span class="text-wedding-gold mr-3">🍸</span> Bars & Drinks
                 </h3>
@@ -219,7 +250,7 @@
                     </a>
                 </div>
 
-                <h4 class="font-semibold text-xl text-wedding-primary mb-4">Restaurant-Bars</h4>
+                <h4 class="font-semibold text-xl text-wedding-primary mb-4 pb-2 border-b-2 border-wedding-primary inline-block">Restaurant-Bars</h4>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <a href="https://maps.app.goo.gl/eSkcaxhuWcCiVWyS8" target="_blank" class="block p-4 bg-wedding-light-pink rounded-lg hover:bg-wedding-pink hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
                         <p class="font-medium text-wedding-primary">Sierra Madre Brewing Co.</p>
@@ -238,7 +269,7 @@
             </div>
 
             <!-- Street Food & Desserts -->
-            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-pink">
+            <div class="mb-16 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
                 <h3 class="font-serif text-3xl md:text-4xl text-wedding-primary mb-6 flex items-center">
                     <span class="text-wedding-gold mr-3">🍦</span> Street Food & Desserts
                 </h3>
@@ -251,7 +282,7 @@
                 </div>
 
                 <div>
-                    <h4 class="font-semibold text-xl text-wedding-primary mb-4">Cafés & Bakeries</h4>
+                    <h4 class="font-semibold text-xl text-wedding-primary mb-4 pb-2 border-b-2 border-wedding-primary inline-block">Cafés & Bakeries</h4>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <a href="https://maps.app.goo.gl/J5coxfeXcybG4nhHA" target="_blank" class="block p-4 bg-wedding-light-pink rounded-lg hover:bg-wedding-pink hover:bg-opacity-20 transition-all duration-300 hover:shadow-md">
                             <p class="font-medium text-wedding-primary">El Cafelito Monterrey</p>
@@ -278,7 +309,7 @@
             <div class="text-center mb-12">
                 <h2 class="font-serif text-5xl md:text-6xl text-wedding-primary mb-4">Culture & History</h2>
                 <div class="flex justify-center items-center mb-6">
-                    <div class="text-2xl text-wedding-gold">✦</div>
+                    <div class="text-2xl text-wedding-primary">✦</div>
                 </div>
                 <p class="text-lg text-wedding-primary opacity-70 italic">Discover Monterrey's rich heritage</p>
             </div>
@@ -300,7 +331,7 @@
                 </div>
 
                 <!-- MARCO -->
-                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-pink">
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-primary">
                     <h3 class="font-serif text-2xl md:text-3xl text-wedding-primary mb-4">🎨 Museo MARCO</h3>
                     <p class="text-wedding-primary opacity-70 mb-4">Contemporary Art Museum - Free on Wednesdays & Sundays</p>
                     <a href="https://maps.app.goo.gl/DoZfTghBgxctciQK9" target="_blank" class="inline-block px-6 py-2 bg-wedding-pink text-white rounded-full hover:bg-wedding-primary transition-colors">
@@ -373,11 +404,11 @@
                 </div>
 
                 <!-- San Pedro & More -->
-                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-pink">
+                <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-wedding-primary">
                     <h3 class="font-serif text-2xl md:text-3xl text-wedding-primary mb-4">🌸 San Pedro & Parks</h3>
                     <div class="space-y-4">
                         <div>
-                            <h4 class="font-semibold text-xl text-wedding-primary mb-3">Centro de San Pedro</h4>
+                            <h4 class="font-semibold text-xl text-wedding-primary mb-3 pb-2 border-b-2 border-wedding-primary inline-block">Centro de San Pedro</h4>
                             <p class="text-wedding-primary opacity-70 mb-4">Walk down Calle Independencia, visit cafés and plazas</p>
                             <div class="grid md:grid-cols-2 gap-4">
                                 <a href="https://maps.app.goo.gl/Jx8AVpLTaCF9pYbi7" target="_blank" class="block p-4 bg-wedding-light-pink rounded-lg hover:bg-wedding-pink hover:bg-opacity-20 transition-all">
@@ -389,7 +420,7 @@
                             </div>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-xl text-wedding-primary mb-3">Green Spaces</h4>
+                            <h4 class="font-semibold text-xl text-wedding-primary mb-3 pb-2 border-b-2 border-wedding-primary inline-block">Green Spaces</h4>
                             <div class="grid md:grid-cols-2 gap-4">
                                 <a href="https://maps.app.goo.gl/uCH5e8MQJtDCGc8u6" target="_blank" class="block p-4 bg-wedding-light-pink rounded-lg hover:bg-wedding-pink hover:bg-opacity-20 transition-all">
                                     <p class="font-medium text-wedding-primary">Parque Rufino Tamayo</p>
@@ -455,13 +486,13 @@
             <div class="text-center mb-12">
                 <h2 class="font-serif text-5xl md:text-6xl text-wedding-primary mb-4">Nightlife</h2>
                 <div class="flex justify-center items-center mb-6">
-                    <div class="text-2xl text-wedding-gold">✦</div>
+                    <div class="text-2xl text-wedding-primary">✦</div>
                 </div>
                 <p class="text-lg text-wedding-primary opacity-70 italic">Experience Monterrey after dark</p>
             </div>
 
             <!-- High-end Areas -->
-            <div class="mb-12 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-primary">
+            <div class="mb-12 bg-white rounded-lg shadow-lg p-8 border-t-4 border-wedding-gold">
                 <h3 class="font-serif text-3xl md:text-4xl text-wedding-primary mb-6 flex items-center">
                     <span class="text-wedding-gold mr-3">✨</span> Upscale Dining & Entertainment Areas
                 </h3>
